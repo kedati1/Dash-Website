@@ -1,0 +1,171 @@
+/* CSS Page */
+/* Background Image and text font assigned to all my pages*/
+body{ 
+background-image:url("../Assets/Skyblue Background.png"); /* File Location to the blue background colour */
+font-family:perpetua
+}
+/* This is a Boxmodel used for the title of the webpages. */
+.TitleBox{	 
+	margin-top:-7%;
+	margin-left:45%;
+	border:5px solid purple;
+	padding:12px;
+	width:15%;
+	background: Black;
+	font-weight:normal;
+	font-size:45;
+	font-style:italic;
+	color:white;
+	text-align: center;
+}
+/* Box Model design for the three buttons used on the website. */
+.Homebutton{
+	margin-left:15%;
+	border:5px solid purple;
+	padding:12px;
+	width:15%;
+	background: Black;
+	font-weight:normal;
+	font-size:23;
+	font-style:italic;
+	color:white;
+	text-align: center;
+}
+.Catalogbutton{
+	margin-top:-5.95%;
+	margin-left:45%;
+	border:5px solid purple;
+	padding:12px;
+	width:15%;
+	background: Black;
+	font-weight:normal;
+	font-size:23;
+	font-style:italic;
+	color:white;
+	text-align: center;
+}
+.Formbutton{
+	margin-top:-5.95%;
+	margin-left:75%;
+	border:5px solid purple;
+	padding:12px;
+	width:15%;
+	background: Black;
+	font-weight:normal;
+	font-size:23;
+	font-style:italic;
+	color:white;
+	text-align: center;
+}
+/* Box Model Design for the Welcome Message located on the homepage. */
+#WelcomeBox{
+	margin-left: 37%;
+	border:5px Solid cyan;
+	padding:12px;
+	width:30%;
+	background: Black;
+	font-weight:normal;
+	font-size:23;
+	font-style:italic;
+	color:white;
+	text-align: Left;
+}
+
+/* Link Styles */
+
+/* Unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: hotpink;
+}
+
+/* Hover over link */
+a:hover {
+    color: orange;
+}
+
+/* Selecting link */
+a:active {
+    color: red;
+}
+/* Style for Unordered list used on Form Page*/
+ul.form{
+	font-size:20px;
+	color:Black;
+	font-family: perpetua
+}
+/* Box Models for each of the 6 products displayed o nthe catalogue pages.*/
+.ProductBox1{
+	margin-left: 3%;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}
+.ProductBox2{
+	margin-left: 36%;
+	margin-top: -34%;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}
+.ProductBox3{
+	margin-left: 70%;
+	margin-top: -475;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}
+.ProductBox4{
+	margin-left: 3%;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}
+.ProductBox5{
+	margin-left: 36%;
+	margin-top: -465;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}
+.ProductBox6{
+	margin-left: 70%;
+	margin-top: -465;
+	border:5px Solid Black;
+	padding:12px;
+	width:350;
+	font-weight:normal;
+	font-size:25px;
+	font-style:Bold;
+	color:Black;
+	text-align: Left;
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<!-- CSS page link -->
+<link rel="stylesheet" type="text/css" href="..\Style\Style Sheet.css">
+<title>Customer Form</title>
+
+<script type="text/javascript">
+function Validation()
+{
+		// Delcaring the Variables for Email Validation
+		var Count = document.forms["CustomerForm"]["email"].value;
+		var atsign = Count.indexOf("@");
+		var dotposition= Count.lastIndexOf(".");
+		// Variables for Name Validation
+		var FirstNameLength = document.CustomerForm.FirstName.value;
+		var LastNameLength = document.CustomerForm.LastName.value;
+		
+			// Email validation to check if specific amount of characters have been inputted at each point of an Email
+			if(atsign<1 || dotposition<atsign+2 || dotposition+2>=Count.length)
+			{
+				alert("Not a valid e-mail address");
+				return false;
+			}
+			//Name Validation, checking if the boxes have any charaters added to it.
+			else if (FirstNameLength <1||LastNameLength <1)
+			{
+				alert("Please check the Boxes")
+				return false;
+			}
+}
+
+</script>
+
+<!-- Dash Logo -->
+<h1><img name ="DashLogo" src="../Assets/Dash Logo.png" border="0" alt="Dash Logo" style="width:150px;height:120px;">
+</head>
+
+<body>
+<!-- Webpage Title -->
+	<h1 class="TitleBox"> Enquiry Form Page </h1>
+<!-- Navigation Menu that links to other pages. Box Model styled on Different Page --> 
+	<p class="Homebutton"><a href="Home Page.html"> Home </p></a>
+	<p class="Catalogbutton"><a href="Catalog Page.html"> Catalogue </p></a>
+	<p class="Formbutton"><a href="Customer Form Page.html"> Customer Enquiry Form </p></a>
+
+<!-- Form for users to interact with -->
+	<form name="CustomerForm" onsubmit ="return Validation()" action ="mailto:Dash@CustomerSupport.com" Method ="Post" class="Sendings";>
+<!-- Bulletpoint unordered list for the form titles -->
+		<ul class="form">
+			<li> First Name </li> <input type="text" name = "FirstName" style="width:250px">
+			<li> Last Name </li> <input type="text" name = "LastName" style="width:250px">
+			<li> Email: </li> <input type="text" name = "email" style="width:350px">
+			<li> Comment </li> <textarea rows="6" cols="80" maxlength="1000"></textarea>
+		</ul>
+
+<!-- Submit and Reset buttons that provide functionality of the form -->
+	<br><input type='submit' name='submit' value='Submit')>
+	<input type='reset'value='Reset'></p>
+	</form>
+</body>
+</html>
